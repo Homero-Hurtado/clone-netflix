@@ -5,6 +5,13 @@ body{
     font-weight: 800;
     background-image: url(https://i.blogs.es/9a1d25/cinema-2556157_1280/1366_2000.jpg);
     background-repeat: no-repeat;
+    margin: 0%;
+}
+header.abajo{
+    display: flex;
+    background-color: black;
+    position: fixed;
+    width: 100%;
 }
 nav{
     display: flex;

@@ -13,7 +13,7 @@
         <nav>
             <ul class="menu-izq">
                 <li>
-                    <a href="#" class="logo">
+                    <a href="https://www.netflix.com/" class="logo">
                         <img src="portadas/logo.png" alt="Netflix">
                     </a>
                 </li>
@@ -30,7 +30,35 @@
             </ul>
         </nav>
     </header>
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header=document.querySelector("header");
+            header.classList.toggle("abajo",window.scrollY>0);
+        })
+    </script>
     <section class="peliculas">
+        <article>
+            <div>
+                <h3>Mi lista</h3>
+            </div>
+            <div class="contenedor">
+                <div class="elemento">
+                    <img src="portadas/avatar.jpg" alt="portada">
+                </div>
+                <div class="elemento">
+                    <img src="portadas/bety-la-fea.jpg" alt="portada">
+                </div>
+                <div class="elemento">
+                    <img src="portadas/rosario-tijeras.jpg" alt="portada">
+                </div>
+                <div class="elemento">
+                    <img src="portadas/ruby.jpg" alt="portada">
+                </div>
+                <div class="elemento">
+                    <img src="portadas/la-casa-de-papel.jpg" alt="">
+                </div>
+            </div>
+        </article>
         <article>
             <div>
                 <h3>Populares de Netflix</h3>
