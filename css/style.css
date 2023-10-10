@@ -1,16 +1,19 @@
 body{
-    background-color: black;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
     color: white;
+    background-color: black;
     font-family: sans-serif;
-    margin: 0%;
+    box-sizing: border-box;
 }
 
 main{
     background: linear-gradient(to top, black, transparent);
 }
 
-.main-display{
-    background: url(../portadas/pelicula-principal.jpg);   
+.container{
+    background: url(../covers/pelicula-principal.jpg);   
     background-size: cover; 
 }
 
@@ -19,6 +22,7 @@ header.abajo{
     position: fixed;
     width: 100%;
 } 
+
 nav{
     display: flex;
     align-items: center;
@@ -27,38 +31,45 @@ nav{
     width: 100%;
     height: 60px;
 }
-nav ul.menu-izq{
+
+nav ul.left-menu{
     display: flex;
     list-style: none;
     align-items: center;
     padding: 0px;
 }
-nav ul.menu-izq li, nav a{
+
+nav ul.left-menu li, nav a{
     color: white;
     text-decoration: none;
     margin: 10px;
     font-size: 15px;
     cursor:pointer;
 }
+
 .logo img{
     width: 90px;
     height: 30px;
 }
-nav ul.menu-der{
+
+nav ul.right-menu{
     display: flex;
     list-style: none;
     align-items: center;
     padding: 0px;
 }
-nav ul.menu-der li{
+
+nav ul.right-menu li{
     margin: 10px;
     cursor:pointer;
 }
+
 nav img{
     width: 30px;
     height: 30px;
 }
-.pelicula-principal{
+
+.main-movie{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -69,7 +80,7 @@ nav img{
     color: white;
 }
 
-.descripcion{
+.description{
     width: 500px;
     text-align: justify;
 }
@@ -92,29 +103,29 @@ nav img{
     border-radius: 5px;
     font-size: 17px;
     font-weight: bold;
-    /* background-color: rgba(0, 0, 0,0.1); */
 }
 
-
-.first-list{
+.my-list{
     padding: 0px 30px 0px 30px;
 }
 
-.peliculas{
+.movies{
     padding: 0px 30px 30px 30px;
 }
 
-.contenedor{
+.movie-container{
     margin-top: 20px;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     grid-column-gap: 20px;
     width: 100%;
 }
-.elemento{
+
+.movie-element{
     height: min-content;
     cursor:pointer;
 }
-.elemento img{
+
+.movie-element img{
     width: 100%;
 }
